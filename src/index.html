@@ -9,15 +9,23 @@
     <title>Whats Cookin</title>
   </head>
   <body>
-    <header><h1>Whats Cookin</h1><input></input></header><img src='image/grey_heart.svg'></img>
-    <h2>Pantry</h2>
-      <section></section>
-    <h2>Recipes</h2> 
-      <article class='recipe-card'>
+    <header><h1>Whats Cookin</h1><input type="button"value="Browse by type btn"><input value="Search Input by recipe name or ingredients">
+      <img src="images/grey_heart.svg"><img src="images/cat_icon.png"><img src="images/favorite_star.png">
+    </header>
+    <aside>
+      <h2>Pantry</h2>
+    </aside>
+    <main>
+      <h2>Recipes</h2> 
+      <article class='recipe__card'>
         <h3>recipe-card-header</h3>
-        <li class='recipe-card-ingredient'><span>chicken</span>
-        </li>
+        <ol>
+          <li class="recipe__card--item"><span>Apple</span>
+          <li class="recipe__card--item"><span>Bagel</span>
+          <li class="recipe__card--item"><span>Zucchini</span>
+        </ol>
       </article>
+    </main>
     <script type="text/javascript" src="../data/users.js"></script>
     <script type="text/javascript" src="../data/recipes.js"></script>
     <script type="text/javascript" src="../data/ingredients.js"></script>
