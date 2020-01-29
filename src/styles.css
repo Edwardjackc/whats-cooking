@@ -4,9 +4,15 @@
 }
 
 body{ 
+  grid-template-columns:30%;
+  grid-template-rows:10%;
+  display:grid;
   height:100vh;
-  width:100%;
   font-family: 'Open Sans', sans-serif;
+  grid-template-areas:
+    "top top"
+    "main aside"
+    "main aside";
 }
 
 /* HEADER */ 
@@ -16,13 +22,13 @@ h1{
 }
 
 header{
+  grid-area:top;
   width:100%;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
   background-color:lightseagreen;
-  height:10%;
   padding:5px;
 }
 
@@ -35,6 +41,15 @@ header{
   height:50px;
   width:500px;
   padding:2px;
+  font-size:.8em;
+}
+
+.header__input-btn{
+  height:50px; 
+  width: 110px;
+  background-color:#ffc20c;
+  padding:5px;
+  font-size:.8em;
 }
 
 .header__input--img{
@@ -50,11 +65,16 @@ header{
 }
 
 /* MAIN */
-
+main{
+  grid-area:main;
+}
 
 
 /* ASIDE */ 
-.sidebar {
+aside{
+    grid-area:aside;
+}
+/* .sidebar {
   background-color:blue;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -66,4 +86,4 @@ header{
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
+}  */
