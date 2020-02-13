@@ -6,8 +6,8 @@ class User{
 
   }
   storeRecipes(type,recipe){
-  }
 
+  }
 
   removeRecipe(type,recipe){
 
@@ -16,7 +16,7 @@ class User{
   filterRecipes(type,tag) {
 
   }
-  
+
   searchRecipes(type,keyword){
 
   }

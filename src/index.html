@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="normalize.css">
     <title>Whats Cookin</title>
   </head>
   <body>
-    <header><h1>Whats Cookin</h1>
+    <header><h1 class="header__h1">Whats Cookin</h1>
       <input class="header__input-btn" type="button" value="Browse Type">
       <div class="header__div--container">
-        <input class="header__input"placeholder="Search Input by recipe name or ingredients">
+        <input class="header__input"type="text"placeholder="Search Input by recipe name or ingredients">
         <img class="header__input--img"src="images/search.svg">
       </div>
       <img class="header__img"id="header__img--heart"type="button"src="images/grey_heart.svg">
@@ -20,21 +21,26 @@
       <img class="header__img"id="header__img--favorite"type="button"src="images/favorite_star.png">
     </header>
     <aside class="sidebar">
-      <h2>Pantry</h2>
+      <h2 class="sidebar__header">Pantry</h2>
       <ol>
         <li>Pantry-Item</li>
         <li>Pantry-Item2</li>
       </ol>
     </aside>
     <main>
-      <h2>Recipes</h2> 
-      <article class='recipe__card'>
-        <h3>recipe-card-header</h3>
+      <h2 class="recipe__card--header">Recipes</h2> 
+      <article class="recipe__card">
+        <h3 class="recipe__card--header">recipe-card-header</h3>
         <ol>
           <li class="recipe__card--item"><span>Apple</span>
           <li class="recipe__card--item"><span>Bagel</span>
           <li class="recipe__card--item"><span>Zucchini</span>
         </ol>
+        <div class="recipe__div--container">
+          <input class="recipe__btns recipe__btn--favorite" type="button" value="favorite">
+          <input class="recipe__btns recipe__btn--ingredients" type="button" value="ingredients">
+          <input class="recipe__btns recipe__btn--save-for-later" type="button"value="save">
+        </div>
       </article>
     </main>
     <script type="text/javascript" src="../data/users.js"></script>

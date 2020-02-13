@@ -19,8 +19,10 @@ body{
 
 /* HEADER */ 
 
-h1{
+.header__h1{
   color: #ffc30c;
+  font-weight: 700;
+  font-size:2em;
 }
 
 header{
@@ -70,7 +72,7 @@ header{
 /* MAIN */
 main{
   grid-area:main;
-  padding:5px;
+  padding:10px;
 }
 
 .recipe__card{
@@ -85,8 +87,33 @@ main{
   font-size:1.5em;
 }
 
+.recipe__div--container{
+  display:flex;
+  justify-content:space-between;
+  height:30px;
+}
+
+.recipe__btns{
+  display:inline-block;
+  align-content: center;
+  background:#ffc20c;
+  font-size:.7em;
+  width: 25%;
+  height:100%;
+  font:.5em;
+  font-weight:700;
+}
+
+.recipe__btn--ingredients{
+  width:35%;
+}
+
 
 /* ASIDE */ 
+
+.sidebar{
+  border-right: 2px black solid
+}
 
 .sidebar__header{
   font-weight: 400;
