@@ -5,3 +5,8 @@ const Recipe = require("../src/recipe");
 const data = require("../data/recipe-data");
 
 
+describe('Recipe', () => {
+  let recipe1;
+  beforeEach(() => {
+    recipe1 = new Recipe(recipeData[0]);
+  })
