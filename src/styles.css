@@ -1,18 +1,20 @@
 *{
-  box-sizing:border-box;
-  border:1px solid  red
+box-sizing:border-box;
+/* border:1px solid  red */
 }
 
 body{ 
-  grid-template-columns:30%;
+  background-color:#F2F3EF;
+  font-family: 'Open Sans', sans-serif;
+  grid-template-columns:20%;
   grid-template-rows:10%;
+  padding:10px 20px 0px 20px;
   display:grid;
   height:100vh;
-  font-family: 'Open Sans', sans-serif;
   grid-template-areas:
     "top top"
-    "main aside"
-    "main aside";
+    "aside main"
+    "aside main";
 }
 
 /* HEADER */ 
@@ -23,6 +25,7 @@ h1{
 
 header{
   grid-area:top;
+  border: 1px grey solid;
   width:100%;
   display: flex;
   justify-content: space-around;
@@ -67,10 +70,31 @@ header{
 /* MAIN */
 main{
   grid-area:main;
+  padding:5px;
+}
+
+.recipe__card{
+  border: 1px grey solid;
+  height:300px;
+  padding:20px;
+  width:300px;
+}
+
+.recipe__card--header{
+  font-weight:400;
+  font-size:1.5em;
 }
 
 
 /* ASIDE */ 
+
+.sidebar__header{
+  font-weight: 400;
+  font-size:1.5em;
+}
+
+
+
 aside{
     grid-area:aside;
 }
