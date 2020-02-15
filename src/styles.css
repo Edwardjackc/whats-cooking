@@ -1,6 +1,6 @@
 *{
 box-sizing:border-box;
-/* border:1px solid  red */
+border:1px solid  red
 }
 
 body{ 
@@ -76,6 +76,9 @@ main{
 }
 
 .recipe__card{
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
   border: 1px grey solid;
   height:300px;
   padding:20px;
@@ -118,6 +121,7 @@ main{
 .sidebar__header{
   font-weight: 400;
   font-size:1.5em;
+  padding-left: 1.0rem;
 }
 
 
