@@ -5,6 +5,15 @@ class User{
     this.pantry = user.pantry; 
 
   }
+
+  displayFavorite(){
+    return this.favoriteRecipes
+  }
+
+  displaySavedRecipes() {
+    return this.recipesToCook;
+  }
+
   storeRecipes(type,recipe){
 
   }
